@@ -85,22 +85,18 @@ def tflite_detect_image(modelpath, imgpath, lblpath, min_conf=0.1, savepath='/co
     return
 
 def run_model():
+    
+    # Directly open the file dialog to select an input image file
+    file_path = filedialog.askopenfilename(title="Select an Image", filetypes=[("Image Files", "*.jpg; *.jpeg; *.png")])
+    
+    if not file_path:
+        messagebox.showinfo("Info", "No file selected!")
+        return
     # Set up variables for running user's model
     PATH_TO_MODEL='trainedcom.tflite'   # Path to .tflite model file
     PATH_TO_LABELS='labelmap.txt'   # Path to labelmap.txt file
-    
-    # Explicitly focus the Tkinter window
-    root.focus_force()
-    
-    # Directly open the file dialog to select an input image file
-    filename = filedialog.askopenfilename(title="Select an Image", filetypes=[("Image files", "*.jpg; *.jpeg; *.png; *.bmp")])
-    
-    if not filename:
-        messagebox.showinfo("Info", "No file selected!")
-        return
-    
     # Run inferencing function
-    tflite_detect_image(PATH_TO_MODEL, filename, PATH_TO_LABELS)
+    tflite_detect_image(PATH_TO_MODEL, file_path, PATH_TO_LABELS)
 
 # Initialize Tkinter window
 root = tk.Tk()
