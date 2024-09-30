@@ -1,5 +1,4 @@
 swaraDetection/
-
 ├── bhaktandePakads.ipynb  
 
 ├── images.zip 
@@ -59,7 +58,7 @@ The project leverages a trained TensorFlow object detection model to locate and 
 
 Example output image showing detected Swaras:
 
-![Detected Swaras Output](Pasted Graphic 2.png)  
+![Detected Swaras Output](outputImg.png)  
 
 ## Future Enhancements
 
