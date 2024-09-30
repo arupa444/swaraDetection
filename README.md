@@ -1,13 +1,23 @@
 swaraDetection/
+
 ├── bhaktandePakads.ipynb  
+
 ├── images.zip 
+
 ├── label.json 
+
 ├── tensorflowCap.ipynb
+
 ├── uiandux/ 
+
 │   ├── main.py # (Your UI application code)
+
 │   └── ... (Other UI assets)
+
 ├── detectedSwarasPreview.pdf 
+
 ├── trainedcom.tflite 
+
 └── README.md
 
 
