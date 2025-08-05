@@ -1,3 +1,18 @@
+# Swara Detection from Images of Old Books
+
+This project utilizes computer vision and deep learning to detect and identify Swaras (musical notes in Indian classical music) from images extracted from old books.
+
+## Overview
+
+The project leverages a trained TensorFlow object detection model to locate and classify Swaras within images of musical notations. The key components include:
+
+- **Image Dataset:** A collection of images from old books containing Swara notations, along with corresponding XML annotation files generated using LabelImg.
+- **TensorFlow Object Detection Model:** A custom-trained object detection model trained to identify Swaras as objects within the images.
+- **Swara Classification:** The model outputs bounding boxes around detected Swaras and assigns labels (classes) to them.
+- **User Interface (UI):** A user-friendly interface built to interact with the trained model. Users can input images and view the detected Swaras highlighted with bounding boxes.
+
+
+
 swaraDetection/
 ├── bhaktandePakads.ipynb  
 
@@ -20,18 +35,6 @@ swaraDetection/
 └── README.md
 
 
-# Swara Detection from Images of Old Books
-
-This project utilizes computer vision and deep learning to detect and identify Swaras (musical notes in Indian classical music) from images extracted from old books.
-
-## Overview
-
-The project leverages a trained TensorFlow object detection model to locate and classify Swaras within images of musical notations. The key components include:
-
-- **Image Dataset:** A collection of images from old books containing Swara notations, along with corresponding XML annotation files generated using LabelImg.
-- **TensorFlow Object Detection Model:** A custom-trained object detection model trained to identify Swaras as objects within the images.
-- **Swara Classification:** The model outputs bounding boxes around detected Swaras and assigns labels (classes) to them.
-- **User Interface (UI):** A user-friendly interface built to interact with the trained model. Users can input images and view the detected Swaras highlighted with bounding boxes.
 
 ## Project Structure
 
